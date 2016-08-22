@@ -3,10 +3,10 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
  
-  $contactname=$_POST['name'];
+  $contactname=$_POST['contactname'];
 
-  $contactemail=$_POST['email'];
-  $contactmessage=$_POST['message'];
+  $contactemail=$_POST['contactemail'];
+  $contactmessage=$_POST['contactmessage'];
 
  /*  echo $emailadmin;*/
   
