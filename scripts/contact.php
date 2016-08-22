@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  /*  echo $emailadmin;*/
   
 
-  $emailadmin="sells@myappranker.com";
+  $emailadmin="sales@myappranker.com";
   $forwordEmail="myappranker@gmail.com";
 
   $subject = "Contact Us.";
@@ -39,7 +39,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(mail($forwordEmail,$subject,$message,$headers)){
 
      
-               header('Location:'.'http://myappranker.com/thankyou.html');
+             /*  header('Location:'.'http://myappranker.com/thankyou.html');*/
+             echo "ok";
 
       
 
@@ -48,7 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     else{
     
 
-        header('Location:'.'http://myappranker.com/thankyou.html');
+      /*  header('Location:'.'http://myappranker.com/thankyou.html');*/
+           echo "ok";
 
     }
 
@@ -58,7 +60,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   else{
    
-     header('Location:'.'http://myappranker.com/');
+   /*  header('Location:'.'http://myappranker.com/');*/
+        echo "no";
 
   }
 
