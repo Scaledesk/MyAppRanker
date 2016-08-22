@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $contactemail=$_POST['email'];
   $contactmessage=$_POST['message'];
 
-
+ /*  echo $emailadmin;*/
   
 
   $emailadmin="sells@myappranker.com";
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-  /*$messageUsers=file_get_contents('template.html');*/
+ 
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers = "From:sudo@scaledesk.com\r\n";
   $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";

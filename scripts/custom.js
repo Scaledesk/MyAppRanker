@@ -143,7 +143,8 @@ if($('.video-bg')[0]) {
             $('#subscribe_submit').button('loading'); 
             var action = $(this).attr('action');
             $.ajax({
-                url: action,
+                /*url: action,*/
+                 url: 'script/contact.php',
                 type: 'POST',
                 data: {
                     newsletter_email: $('#subscribe_email').val()
@@ -157,6 +158,7 @@ if($('.video-bg')[0]) {
 					
                 },
                 error: function() {
+
                     $('#subscribe_submit').button('reset');
 					
 					//Use modal popups to display messages
@@ -222,14 +224,16 @@ if($('.video-bg')[0]) {
             $('#contact_submit').button('loading'); 
             var action = $(this).attr('action');
             $.ajax({
-                url: action,
+                url: 'scripts/contact.php',
                 type: 'POST',
                 data: {
                     contactname: $('#contact_name').val(),
                     contactemail: $('#contact_email').val(),
                     contactmessage: $('#contact_message').val()
                 },
-                success: function() {
+                success: function(data) {
+/*                    console.log(data);
+                     console.log('sdkfhsfsd');*/
                     $('#contact_submit').button('reset');
 					$('#modalContact').modal('hide');
 					
