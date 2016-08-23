@@ -234,12 +234,14 @@ if($('.video-bg')[0]) {
                 success: function(data) {
 /*                    console.log(data);
                      console.log('sdkfhsfsd');*/
+                      location.href = 'http://www.myappranker.com/thankyou.html';
+                    /*  
                     $('#contact_submit').button('reset');
 					$('#modalContact').modal('hide');
 					
 					//Use modal popups to display messages
 					$('#modalMessage .modal-title').html('<i class="icon icon-envelope-open"></i>Well done!<br>Your message has been successfully sent!');
-					$('#modalMessage').modal('show');
+					$('#modalMessage').modal('show');*/
                 },
                 error: function() {
                     $('#contact_submit').button('reset');
