@@ -234,7 +234,9 @@ if($('.video-bg')[0]) {
                 success: function(data) {
 /*                    console.log(data);
                      console.log('sdkfhsfsd');*/
+
                       top.location.href='http://www.myappranker.com/thankyou.html';
+                      
                     /*  
                     $('#contact_submit').button('reset');
 					$('#modalContact').modal('hide');
