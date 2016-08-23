@@ -235,8 +235,8 @@ if($('.video-bg')[0]) {
 /*                    console.log(data);
                      console.log('sdkfhsfsd');*/
 
-                      top.location.href='http://www.myappranker.com/thankyou.html';
-                      
+                     /* top.location.href='http://www.myappranker.com/thankyou.html';*/
+                      window.location.href='http://www.myappranker.com/thankyou.html';
                     /*  
                     $('#contact_submit').button('reset');
 					$('#modalContact').modal('hide');
